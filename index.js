@@ -104,8 +104,82 @@ const questions = [
     },
 
     {
-        
+        type: 'input',
+        name: 'installation',
+        message: 'Pease provide step-by-step installation instructions for your project: ',
+        validate: installInput => {
+            if (installInput) {
+                return true;
+            }else{
+                console.log('please enter installation instructions.');
+                return false;
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Please give use cases and examples: ',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            }else{
+                console.log('Enter use instructions.');
+                return false
+            }
+        }
+    },
+
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Select the license you would like to use for your project',
+        choices: ['agpl', 'zlib', 'mit', 'apache', 'no license'],
+    },
+
+    {
+        type: 'confirm',
+        name: 'confirmContributers',
+        message: 'Would you like to allow other developers to contribute?',
+        default: true
+    },
+
+    {
+        type: 'input',
+        name: 'contribute',
+        message: 'Provide contribution guidelines: ',
+        when: ({ confirmContributers }) => {
+            if (confirmContributers) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        validate: contributerInput => {
+            if (contributerInput) {
+                return true;
+            } else {
+                console.log('Provide contribution guidelines.')
+                return false;
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Provide testing instructions',
+        validate: testInput => {
+            if (testInput) {
+                return true;
+            } else {
+                console.log('Provide testing instructions.');
+                return false;
+            }
+        }
     }
+
 ];
 
 // TODO: Create a function to write README file
