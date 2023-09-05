@@ -17,6 +17,94 @@ const questions = [
                 return false;
             }
         }
+    },
+
+    {
+        type: 'input',
+        name: 'githubUser',
+        message: 'Enter your Github Username: ',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log('Enter your Username please.')
+                return false
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please input your email: ',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log("Enter your email please.")
+                return false;
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        name: 'what',
+        message: 'What is your project and what problem will it solve?',
+        validate: whatInput => {
+            if (whatInput) {
+                return true;
+            }else{
+                console.log('Please enter the relevent information');
+                return false;
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        name: 'why',
+        message: 'Why did you create this project?',
+        validate: whyInput => {
+            if (whyInput) {
+                return true;
+            }else{
+                console.log("please enter the relevent information");
+                return false;
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        name: 'how',
+        message: 'How would somebody use this?',
+        validate: howInput => {
+            if (howInput) {
+                return true;
+            }else{
+                console.log('Please enter the relevent information');
+                return ;
+            }
+        }
+    },
+
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Please provide step-by-step installation instructions for your project. (Required)',
+        validate: installInput => {
+            if (installInput) {
+                return true;
+            } else {
+                console.log('Please enter your installation instructions!');
+                return false;
+            }
+        }
+    },
+
+    {
+        
     }
 ];
 
