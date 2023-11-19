@@ -1,4 +1,4 @@
-# Professional Readme Generator
+# Node.JS Readme generator
 
   ![badge](https://img.shields.io/badge/license-mit-blue)
 
@@ -13,19 +13,19 @@
   
   ## [Description](#table-of-contents)
 
-  This project generates professional README files for github projects
+  This will save me time writing readme files for assignments
 
-  I was assigned igt by my benevolent bootcamp overlords.
+  Because i was told to
 
-  Simply boot the program in Node.js and answer the prompts.
+  Download the files and run an npm install of the package.json, then start the program in the terminal
 
   ## [Installation](#table-of-contents)
 
-  install inquirer and fs npm's and node.js
+  1- do it 2-??? 3-profit
 
   ## [Usage](#table-of-contents)
 
-  Try with fries and a shake.
+  no
   
   For more information on how to add screenshots for examples, visit the following website:
   
@@ -43,7 +43,7 @@
 
   ## [Tests](#table-of-contents)
 
-  Just try it a bunch.
+  N/A
 
   ## [Questions](#table-of-contents)
 
@@ -51,4 +51,4 @@
 
   [GitHub](https://github.com/undefined)
 
-  [Email: uraniumrainbow](mailto:uraniumrainbow)
+  [Email: uraniumrainbow@gmail.com](mailto:uraniumrainbow@gmail.com)
